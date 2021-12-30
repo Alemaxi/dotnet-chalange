@@ -1,0 +1,29 @@
+Descrição do que eu fiz no projeto.
+
+
+Entendo os conceitos do .net, mas não conhecia muito bem o DDD (só de ouvir falar), então segui a idéia descrita pelo Eduardo Pires, conforme a referência que me foi enviada por
+email. Por isso a primeira coisa que fiz foi fazer a organização do projeto. Dar nome as pastas e ir criando as soluções. Seguindo o DDD eu primeiro Crei o DbContext (tive
+algumas dificuldades de configuração no inicio, mas consegui contornar) e fazer as migrations usando o EF. 
+Depois de ter criado o meu dbcontext, comecei a trabalhar nos repositórios. Conforme o DDD eu criei estas interfaces no domain e aimplemntação em si eu criei na pasta de projeto 
+Infra.Data.
+
+Na sequencia comecei a criar as interfaces de service, criei as implementação tbm em domain conforme o DDD. E por ultimo Criei os AppServices na pasta referente a aplication.
+
+No fim fiz a injeção de cada um dos repositories, services e appServices na pasta startup e fui pra configuração de controllers e authenticação.
+
+Virtualizei um Mysql no docker aqui porque tenho mais costume com Mysql.
+
+Não deu pra refinar muito, pois como não estou acostumado com o DDD, foi fazer enquanto eu aprendia (aliás gostei bastante... achei bem intuitivo), Então não tive muito tempo pra
+refinar o projeto...
+
+
+COISAS QUE GOSTARIA DE TER FEITO
+
+-- Refatorado tudo pra deixar o código mais limpo.
+-- Usado TDD (infelizmente ainda não tenho esse conhecimento)
+
+
+Acredito que isso é um bom resumo de tudo que fiz.
+
+Att,
+Alexandre.
